@@ -4,205 +4,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crumbiva — Cookies and North Indian Food, Doncaster East</title>
-<meta name="description" content="Crumbiva bakes small batch cookies with real butter and premium ingredients, and cooks homestyle North Indian food. Pickup from Doncaster East, Victoria.">
+<meta name="description" content="Crumbiva is a home kitchen in Doncaster East, Victoria. Small batch cookies baked with real butter, and homestyle North Indian food cooked to order. Pickup only.">
 <link rel="icon" href="images/logo.png">
-<style>
-  :root{
-    --cream:#FFFBF8;
-    --paper:#FFFFFF;
-    --ink:#1D1D1F;
-    --muted:#6E6E73;
-    --line:rgba(0,0,0,.07);
-    --blush:#FDE7EF;
-    --rose:#F8CEDF;
-    --red:#E0124A;
-    --sage:#E7F0E8;
-    --peach:#FCEFE4;
-    --lilac:#EEE9F7;
-    --shadow:0 1px 2px rgba(0,0,0,.04), 0 12px 32px -12px rgba(0,0,0,.10);
-    --radius:22px;
-    --measure:1080px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
-  body{
-    margin:0;
-    background:var(--cream);
-    color:var(--ink);
-    font:16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    letter-spacing:-.01em;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3{letter-spacing:-.025em; line-height:1.1; margin:0}
-  p{margin:0}
-  a{color:inherit}
-  img{max-width:100%; display:block}
-  .wrap{max-width:var(--measure); margin:0 auto; padding:0 24px}
-  :focus-visible{outline:2px solid var(--red); outline-offset:3px; border-radius:6px}
-
-  /* ---------- nav ---------- */
-  .nav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(255,251,248,.72);
-    backdrop-filter:saturate(180%) blur(20px);
-    -webkit-backdrop-filter:saturate(180%) blur(20px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-in{display:flex; align-items:center; gap:28px; height:60px;
-          max-width:var(--measure); margin:0 auto; padding:0 24px}
-  .brand{display:flex; align-items:center; gap:10px; font-weight:600; letter-spacing:-.02em; text-decoration:none}
-  .brand img{height:30px; width:auto}
-  .nav-links{display:flex; gap:26px; margin-left:auto; flex-wrap:wrap;
-             font-size:14px; color:var(--muted)}
-  .nav-links a{text-decoration:none}
-  .nav-links a:hover{color:var(--ink)}
-
-  /* ---------- hero ---------- */
-  .hero{text-align:center; padding:88px 0 76px}
-  .hero img.logo{height:96px; width:auto; margin:0 auto 30px}
-  .hero h1{font-size:clamp(2.2rem, 6.2vw, 4rem); font-weight:600; max-width:15ch; margin:0 auto}
-  .hero p.sub{margin:22px auto 0; max-width:46ch; color:var(--muted); font-size:clamp(1rem,2.2vw,1.2rem)}
-  .chips{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:34px 0 0}
-  .chip{
-    background:var(--paper); border:1px solid var(--line); border-radius:999px;
-    padding:9px 17px; font-size:13.5px; color:var(--muted); box-shadow:var(--shadow)
-  }
-  .btns{display:flex; gap:13px; justify-content:center; flex-wrap:wrap; margin-top:38px}
-  .btn{
-    display:inline-block; text-decoration:none; border-radius:999px;
-    padding:13px 27px; font-size:15px; font-weight:500; border:1px solid transparent
-  }
-  .btn.primary{background:var(--red); color:#fff}
-  .btn.primary:hover{background:#C61041}
-  .btn.ghost{background:var(--paper); border-color:var(--line); box-shadow:var(--shadow)}
-  .btn.ghost:hover{border-color:rgba(0,0,0,.16)}
-
-  /* ---------- section scaffolding ---------- */
-  section{padding:84px 0; scroll-margin-top:72px}
-  .tint-cookies{background:linear-gradient(180deg, var(--cream) 0%, var(--blush) 42%, var(--cream) 100%)}
-  .tint-food{background:linear-gradient(180deg, var(--cream) 0%, var(--sage) 40%, var(--cream) 100%)}
-  .tint-recipes{background:linear-gradient(180deg, var(--cream) 0%, var(--lilac) 42%, var(--cream) 100%)}
-  .eyebrow{font-size:12.5px; letter-spacing:.10em; text-transform:uppercase; color:var(--red); font-weight:600}
-  .sec-head{text-align:center; max-width:34ch; margin:0 auto 52px}
-  .sec-head h2{font-size:clamp(1.75rem,4vw,2.55rem); font-weight:600; margin:14px 0 0}
-  .sec-head p{margin-top:16px; color:var(--muted)}
-
-  /* ---------- cards ---------- */
-  .grid{display:grid; gap:22px}
-  .g3{grid-template-columns:repeat(auto-fit, minmax(258px, 1fr))}
-  .card{
-    background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
-    padding:30px 28px; box-shadow:var(--shadow)
-  }
-  .card h3{font-size:1.16rem; font-weight:600}
-  .card p{margin-top:11px; color:var(--muted); font-size:14.5px}
-  .swatch{width:42px; height:42px; border-radius:13px; margin-bottom:20px}
-  .s-almond{background:var(--peach)} .s-gud{background:var(--rose)}
-  .s-pista{background:var(--sage)} .s-more{background:var(--lilac)}
-
-  .note{
-    max-width:60ch; margin:44px auto 0; text-align:center;
-    font-size:14px; color:var(--muted)
-  }
-  .note strong{color:var(--ink); font-weight:600}
-
-  /* ---------- menu ---------- */
-  .menu{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
-        box-shadow:var(--shadow); overflow:hidden}
-  .menu-row{display:flex; gap:16px; align-items:baseline; padding:19px 30px; border-top:1px solid var(--line)}
-  .menu-row:first-child{border-top:0}
-  .menu-row .item{font-weight:500}
-  .menu-row .desc{color:var(--muted); font-size:14px; flex:1; min-width:0}
-  .menu-row .price{color:var(--red); font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap}
-  .pair{display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:22px; margin-top:22px}
-  .pair h3{font-size:1rem; font-weight:600; margin-bottom:14px; color:var(--ink)}
-  .pair .menu-row{padding:14px 24px}
-
-  .callout{
-    margin-top:26px; background:var(--peach); border:1px solid rgba(0,0,0,.05);
-    border-radius:var(--radius); padding:32px 30px
-  }
-  .callout h3{font-size:1.1rem; font-weight:600}
-  .callout p{margin-top:12px; color:#5c5c61; font-size:14.5px; max-width:62ch}
-  .sizes{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
-  .sizes span{background:var(--paper); border:1px solid var(--line); border-radius:999px;
-              padding:8px 16px; font-size:13.5px; font-weight:500}
-
-  /* ---------- recipes ---------- */
-  .recipes{display:grid; gap:16px; max-width:800px; margin:0 auto}
-  details.recipe{
-    background:var(--paper); border:1px solid var(--line); border-radius:18px;
-    box-shadow:var(--shadow); overflow:hidden
-  }
-  details.recipe summary{
-    cursor:pointer; padding:22px 26px; font-weight:600; font-size:1.04rem;
-    display:flex; align-items:center; gap:14px; list-style:none
-  }
-  details.recipe summary::-webkit-details-marker{display:none}
-  details.recipe summary::after{
-    content:"+"; margin-left:auto; color:var(--red); font-weight:400; font-size:1.35rem; line-height:1
-  }
-  details.recipe[open] summary::after{content:"\2013"}
-  details.recipe summary .tag{
-    font-size:12px; font-weight:500; letter-spacing:.02em; color:var(--muted);
-    background:var(--cream); border:1px solid var(--line); border-radius:999px; padding:4px 11px
-  }
-  .recipe-body{padding:0 26px 26px; color:var(--muted); font-size:14.5px}
-  .recipe-body h4{margin:20px 0 8px; font-size:12.5px; letter-spacing:.10em;
-                  text-transform:uppercase; color:var(--red); font-weight:600}
-  .recipe-body ul{margin:0; padding-left:19px}
-  .recipe-body li{margin:5px 0}
-  .recipe-body ol{margin:0; padding-left:19px}
-  .recipe-body p.tip{margin-top:18px; padding-top:16px; border-top:1px solid var(--line); font-size:13.5px}
-
-  /* ---------- footer ---------- */
-  footer{background:var(--paper); border-top:1px solid var(--line); padding:64px 0 40px}
-  .f-grid{display:grid; gap:34px; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr))}
-  .f-grid h3{font-size:12.5px; letter-spacing:.10em; text-transform:uppercase; color:var(--red); font-weight:600}
-  .f-grid p{margin-top:12px; color:var(--muted); font-size:14.5px}
-  .f-grid a{text-decoration:none; color:var(--muted)}
-  .f-grid a:hover{color:var(--ink)}
-  .f-bottom{
-    margin-top:52px; padding-top:26px; border-top:1px solid var(--line);
-    display:flex; gap:16px; flex-wrap:wrap; justify-content:space-between;
-    font-size:13px; color:var(--muted)
-  }
-  .pickup{
-    display:inline-block; background:var(--blush); color:var(--red);
-    border-radius:999px; padding:5px 14px; font-size:12.5px; font-weight:600
-  }
-
-  @media (max-width:640px){
-    .nav-in{gap:16px}
-    .nav-links{gap:16px; font-size:13px}
-    .hero{padding:56px 0 48px}
-    .hero img.logo{height:64px}
-    section{padding:60px 0}
-    .card{padding:26px 22px}
-    .menu-row{display:block; padding:17px 22px}
-    .menu-row .desc{margin-top:5px}
-    .menu-row .price{display:block; margin-top:7px}
-    .callout{padding:26px 22px}
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav">
   <nav class="nav-in" aria-label="Main">
-    <a class="brand" href="#top">
-      <img src="images/logo.png" alt="Crumbiva">
-    </a>
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Crumbiva"></a>
     <div class="nav-links">
-      <a href="#cookies">Cookies</a>
-      <a href="#food">Food</a>
-      <a href="#recipes">Recipes</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="food.html">Food</a>
+      <a href="recipes.html">Recipes</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 </header>
 
-<main id="top">
+<main>
 
   <div class="hero wrap">
     <img class="logo" src="images/logo.png" alt="Crumbiva">
@@ -215,308 +35,93 @@
       <span class="chip">Perfect for gifting</span>
     </div>
     <div class="btns">
-      <a class="btn primary" href="#cookies">See the cookies</a>
-      <a class="btn ghost" href="#food">See the food menu</a>
+      <a class="btn primary" href="#services">What we do</a>
+      <a class="btn ghost" href="#founder">Meet Kanu</a>
     </div>
   </div>
 
-  <section id="cookies" class="tint-cookies">
+  <section class="tint-peach">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Cookies and more</p>
-        <h2>Baked in small batches</h2>
-        <p>Real butter, premium nuts and natural sweeteners. Every batch is baked to order and packed for gifting.</p>
-      </div>
-
-      <div class="grid g3">
-        <article class="card">
-          <div class="swatch s-almond" aria-hidden="true"></div>
-          <h3>Almond Cookies</h3>
-          <p>Buttery, crunchy and delicious.</p>
-        </article>
-        <article class="card">
-          <div class="swatch s-gud" aria-hidden="true"></div>
-          <h3>Gud Saunf Cookies</h3>
-          <p>A perfect blend of jaggery and fennel seeds.</p>
-        </article>
-        <article class="card">
-          <div class="swatch s-pista" aria-hidden="true"></div>
-          <h3>Pistachio Cookies</h3>
-          <p>Loaded with crunchy pistachios for a delightful bite.</p>
-        </article>
-        <article class="card">
-          <div class="swatch s-more" aria-hidden="true"></div>
-          <h3>Soft and chewy</h3>
-          <p>Soft, chewy and full of flavour. The everyday favourite.</p>
-        </article>
-      </div>
-
-      <p class="note">
-        <strong>Flours and sweeteners.</strong> Ragi, oats, almond, wheat, gram flour, sweetener and jaggery.
-        We can customise cookies to suit your dietary preferences. Please contact us for more details.
-      </p>
-    </div>
-  </section>
-
-  <section id="food" class="tint-food">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">North Indian food</p>
-        <h2>Cooked fresh, homestyle</h2>
-        <p>Fresh ingredients. Authentic recipes. Great for any occasion.</p>
-      </div>
-
-      <div class="menu">
-        <div class="menu-row">
-          <span class="item">Paneer Butter Masala</span>
-          <span class="desc">Paneer cooked in a rich, creamy tomato and butter gravy with mild spices.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Kadai Paneer</span>
-          <span class="desc">Paneer cooked with onion, capsicum, tomato and aromatic Indian spices.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Paneer Methi Malai</span>
-          <span class="desc">Paneer cooked with fresh fenugreek leaves in a creamy, mildly spiced gravy.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Creamy Paalak Paneer</span>
-          <span class="desc">Cottage cheese cooked in a smooth spinach gravy with mild spices.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Shahi Paneer <span style="color:var(--muted);font-weight:400">(sweet base)</span></span>
-          <span class="desc">Paneer cooked in a rich, mildly sweet and creamy gravy with aromatic spices.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Daal Bukhara</span>
-          <span class="desc">Slow cooked black lentils finished with butter and cream.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Chole Masala</span>
-          <span class="desc">Chickpeas cooked in a flavourful onion tomato gravy with traditional Punjabi spices.</span>
-          <span class="price">$17</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Rajma Masala</span>
-          <span class="desc">Red kidney beans slow cooked in a homestyle North Indian onion tomato gravy.</span>
-          <span class="price">$17</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Punjabi Kadhi Pakora</span>
-          <span class="desc">Crispy gram flour pakoras simmered in a tangy, creamy yoghurt based Punjabi kadhi.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Baingan Bharta</span>
-          <span class="desc">Roasted eggplant mashed and cooked with onion, tomato and traditional spices.</span>
-          <span class="price">$16</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Soya Chaap Curry</span>
-          <span class="desc">Soya chaap cooked in a rich and flavourful onion tomato gravy with Indian spices.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Aloo Matar</span>
-          <span class="desc">Potatoes and green peas cooked in a homestyle onion tomato gravy with mild spices.</span>
-          <span class="price">$16</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Matar Paneer with Cashew Makhana</span>
-          <span class="desc">Paneer and green peas cooked in a rich gravy with cashew and makhana.</span>
-          <span class="price">$20</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Matar Mushroom</span>
-          <span class="desc">Green peas and fresh mushrooms cooked in a flavourful onion tomato gravy.</span>
-          <span class="price">$18</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Matar Paneer</span>
-          <span class="desc">Paneer and green peas cooked in a homestyle North Indian gravy.</span>
-          <span class="price">$16</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Corn Paalak</span>
-          <span class="desc">Sweet corn cooked in a creamy spinach gravy with mild spices.</span>
-          <span class="price">$16</span>
-        </div>
-        <div class="menu-row">
-          <span class="item">Aloo Gobhi Masala</span>
-          <span class="desc">Potatoes and cauliflower cooked with onion, tomato and traditional spices.</span>
-          <span class="price">$16</span>
-        </div>
-      </div>
-
-      <div class="pair">
-        <div>
-          <h3>Rice</h3>
-          <div class="menu">
-            <div class="menu-row">
-              <span class="item">Jeera Rice</span>
-              <span class="desc">Fragrant basmati rice cooked with cumin.</span>
-              <span class="price">$13</span>
-            </div>
-            <div class="menu-row">
-              <span class="item">Peas Pulao</span>
-              <span class="desc">Basmati rice cooked with green peas and mild spices.</span>
-              <span class="price">$14</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>Raita</h3>
-          <div class="menu">
-            <div class="menu-row">
-              <span class="item">Masala Boondi Raita</span>
-              <span class="desc">Yoghurt with spiced boondi.</span>
-              <span class="price">$8</span>
-            </div>
-            <div class="menu-row">
-              <span class="item">Pineapple Raita</span>
-              <span class="desc">Yoghurt with fresh pineapple and mild spices.</span>
-              <span class="price">$10</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="callout">
-        <h3>Bulk orders for parties</h3>
-        <p>Planning a party or gathering? We accept bulk orders for parties, functions and family gatherings, with curries, rice and raita available in:</p>
-        <div class="sizes">
-          <span>500 ml</span><span>1 L</span><span>2 L</span><span>Custom quantities</span>
-        </div>
-        <p>Please contact us in advance for bulk orders and availability. Vegan and no onion or garlic options are available on request.</p>
+      <div class="about">
+        <p class="eyebrow">About Crumbiva</p>
+        <h2 style="font-size:clamp(1.75rem,4vw,2.55rem);font-weight:600;margin:14px 0 28px">Small kitchen. Big table.</h2>
+        <p>Crumbiva is a home kitchen in Doncaster East, Victoria. We bake cookies in small batches and cook North Indian food the way it is cooked at home, for people who would rather have something made for them than something taken off a shelf.</p>
+        <p>Everything is made to order. Nothing sits in a cabinet waiting for a buyer. When you collect it, it was made for you that week.</p>
+        <blockquote class="quote">Food is how I say welcome. Everything else is just cooking.<span class="quote-attr">Kanu, founder</span></blockquote>
       </div>
     </div>
   </section>
 
-  <section id="recipes" class="tint-recipes">
+  <section id="founder">
+    <div class="wrap">
+      <div class="founder">
+        <div class="founder-copy">
+          <p class="eyebrow">Our founder, Kanu</p>
+          <h2>Kanupriya, known to everyone as Kanu</h2>
+          <p class="lead">Kanupriya, Kanu to everyone who knows her, has been baking for more than twelve years. It began the way these things usually begin. A kitchen, an occasion, and a house full of people who expected to be fed.</p>
+          <p>She is a mother of two, and for most of those years the baking happened around school runs, homework and family life. Cookies came first. Then cakes. Then everything else that could come out of a good oven.</p>
+          <p>The cooking grew alongside the baking. Kanu has catered professionally across India, Singapore, Sydney and Melbourne, and has cooked for more than seventy house parties over a decade. Different cities, different kitchens, different crowds at the table.</p>
+          <p>What never changed was the standard. Real butter. Good nuts. Jaggery where jaggery belongs. Nothing added that does not need to be there.</p>
+          <p>Crumbiva is that same table, set a little wider. The cookies are made in small batches. The curries are cooked the week you collect them. Everything is made the way she makes it at home, because it is home.</p>
+          <p class="sig">Kanu</p>
+        </div>
+        <aside class="founder-panel">
+          <div class="initial" aria-hidden="true">K</div>
+          <div class="name">Kanupriya</div>
+          <div class="stats">
+            <div class="stat"><b>12+</b><span>years of baking</span></div>
+            <div class="stat"><b>70+</b><span>house parties catered</span></div>
+            <div class="stat"><b>4</b><span>cities cooked in</span></div>
+            <div class="stat"><b>10+</b><span>years of professional catering</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="tint-cookies">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">Recipes</p>
-        <h2>Bake them at home</h2>
-        <p>The cookies we make most often, written out so you can make them in your own kitchen.</p>
+        <p class="eyebrow">Our services</p>
+        <h2>What Crumbiva does</h2>
+        <p>Baking, cooking and gifting from one home kitchen in Doncaster East.</p>
       </div>
 
-      <div class="recipes">
+      <div class="services">
+        <article class="service">
+          <div class="glyph g-cookies" aria-hidden="true"></div>
+          <h3>Cookies and bakes</h3>
+          <p>Real butter cookies made in small batches, in a range of flavours and packed for gifting. Almond, jaggery and fennel, pistachio, and softer chewy styles. No added preservatives.</p>
+          <a class="link" href="cookies.html">See the cookies</a>
+        </article>
 
-        <details class="recipe">
-          <summary>Classic Chocolate Chip Cookies <span class="tag">Soft and chewy</span></summary>
-          <div class="recipe-body">
-            <h4>Ingredients</h4>
-            <ul>
-              <li>150 g unsalted butter, softened</li>
-              <li>120 g brown sugar</li>
-              <li>60 g caster sugar</li>
-              <li>1 egg, plus 1 egg yolk</li>
-              <li>1 tsp vanilla extract</li>
-              <li>250 g plain flour</li>
-              <li>1 tsp baking soda</li>
-              <li>1/2 tsp salt</li>
-              <li>200 g dark chocolate chips</li>
-            </ul>
-            <h4>Method</h4>
-            <ol>
-              <li>Beat the butter and both sugars until pale and fluffy.</li>
-              <li>Add the egg, yolk and vanilla. Beat until fully combined.</li>
-              <li>Fold in the flour, baking soda and salt, then the chocolate chips.</li>
-              <li>Chill the dough for at least 1 hour. This is what keeps them thick.</li>
-              <li>Roll into 60 g balls, place on a lined tray, and bake at 180 C for 11 to 13 minutes.</li>
-              <li>The centres should still look underdone. Leave them on the tray for 10 minutes to set.</li>
-            </ol>
-            <p class="tip">Chilling the dough is the single biggest difference between a flat cookie and a thick one. Do not skip it.</p>
-          </div>
-        </details>
+        <article class="service">
+          <div class="glyph g-food" aria-hidden="true"></div>
+          <h3>North Indian food</h3>
+          <p>Seventeen homestyle curries, plus rice and raita, all cooked fresh. Paneer, daal, soya chaap and vegetable dishes. Vegan and no onion or garlic options are available on request.</p>
+          <a class="link" href="food.html">See the food menu</a>
+        </article>
 
-        <details class="recipe">
-          <summary>Jaggery and Fennel Cookies <span class="tag">Gud Saunf</span></summary>
-          <div class="recipe-body">
-            <h4>Ingredients</h4>
-            <ul>
-              <li>130 g ghee or unsalted butter, softened</li>
-              <li>140 g jaggery, grated or powdered</li>
-              <li>1 tbsp milk</li>
-              <li>200 g whole wheat or plain flour</li>
-              <li>1 tsp fennel seeds, lightly crushed</li>
-              <li>1/4 tsp cardamom powder</li>
-              <li>1/4 tsp baking powder</li>
-              <li>A pinch of salt</li>
-            </ul>
-            <h4>Method</h4>
-            <ol>
-              <li>Warm the milk and dissolve the jaggery into it. Let it cool.</li>
-              <li>Beat the ghee, then add the jaggery milk and beat again.</li>
-              <li>Fold in the flour, fennel, cardamom, baking powder and salt to form a soft dough.</li>
-              <li>Rest the dough for 20 minutes.</li>
-              <li>Shape into small rounds and bake at 170 C for 13 to 15 minutes.</li>
-              <li>Cool completely. They firm up as they cool.</li>
-            </ol>
-            <p class="tip">Jaggery burns faster than sugar, so keep the oven a little lower and watch the last two minutes.</p>
-          </div>
-        </details>
+        <article class="service">
+          <div class="glyph g-bulk" aria-hidden="true"></div>
+          <h3>Bulk orders and parties</h3>
+          <p>Curries, rice and raita in 500 ml, 1 L and 2 L containers, or any custom quantity you need. Cooked for parties, functions and family gatherings. Please get in touch in advance.</p>
+          <a class="link" href="tel:+61490875811">Enquire about bulk orders</a>
+        </article>
 
-        <details class="recipe">
-          <summary>Pistachio Shortbread Cookies <span class="tag">Buttery and crunchy</span></summary>
-          <div class="recipe-body">
-            <h4>Ingredients</h4>
-            <ul>
-              <li>200 g unsalted butter, softened</li>
-              <li>80 g icing sugar</li>
-              <li>240 g plain flour</li>
-              <li>40 g cornflour</li>
-              <li>1/2 tsp salt</li>
-              <li>120 g shelled pistachios, roughly chopped</li>
-              <li>1 tsp vanilla extract</li>
-            </ul>
-            <h4>Method</h4>
-            <ol>
-              <li>Beat the butter, icing sugar and vanilla until smooth, not airy.</li>
-              <li>Fold in the flour, cornflour, salt and three quarters of the pistachios.</li>
-              <li>Bring the dough together by hand. Do not overwork it.</li>
-              <li>Roll into a log, wrap, and chill for 2 hours until firm.</li>
-              <li>Slice into 8 mm rounds and press the remaining pistachios onto the tops.</li>
-              <li>Bake at 160 C for 14 to 16 minutes until the edges are just barely golden.</li>
-            </ol>
-            <p class="tip">Shortbread has no raising agent, so the shape you cut is the shape you get. Chill properly before slicing.</p>
-          </div>
-        </details>
+        <article class="service">
+          <div class="glyph g-gift" aria-hidden="true"></div>
+          <h3>Gifting</h3>
+          <p>Cookie boxes finished with care and ready to hand over. We can put a box together around your budget, the occasion, or the number of people on your list.</p>
+          <a class="link" href="tel:+61490875811">Ask about gift boxes</a>
+        </article>
 
-        <details class="recipe">
-          <summary>Ragi and Oat Cookies <span class="tag">Wholesome</span></summary>
-          <div class="recipe-body">
-            <h4>Ingredients</h4>
-            <ul>
-              <li>120 g unsalted butter, softened</li>
-              <li>90 g jaggery or coconut sugar</li>
-              <li>1 egg</li>
-              <li>90 g ragi flour</li>
-              <li>90 g rolled oats</li>
-              <li>60 g whole wheat flour</li>
-              <li>1/2 tsp baking soda</li>
-              <li>1/2 tsp cinnamon</li>
-              <li>40 g chopped almonds or walnuts</li>
-            </ul>
-            <h4>Method</h4>
-            <ol>
-              <li>Beat the butter and jaggery until combined, then beat in the egg.</li>
-              <li>Mix the ragi, oats, wheat flour, baking soda and cinnamon in a separate bowl.</li>
-              <li>Combine the wet and dry, then fold in the nuts.</li>
-              <li>Rest the dough for 30 minutes so the oats soften.</li>
-              <li>Scoop onto a lined tray and flatten slightly with the back of a spoon.</li>
-              <li>Bake at 170 C for 12 to 14 minutes.</li>
-            </ol>
-            <p class="tip">These have a nuttier, denser crumb than a plain cookie. That is the ragi, and it is the point.</p>
-          </div>
-        </details>
-
+        <article class="service">
+          <div class="glyph g-recipes" aria-hidden="true"></div>
+          <h3>Recipes</h3>
+          <p>The cookies we bake most often, written out for your own kitchen. Ingredients, method, and the small notes that decide whether they come out right.</p>
+          <a class="link" href="recipes.html">See the recipes</a>
+        </article>
       </div>
     </div>
   </section>

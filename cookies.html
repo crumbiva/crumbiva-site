@@ -3,74 +3,138 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cookies — Crumbiva</title>
-<meta name="description" content="Small batch cookies baked with real butter and premium ingredients. Almond, jaggery and fennel, pistachio and soft chewy styles. Made to order in Doncaster East, Victoria.">
+<title>Handcrafted Cookies | Crumbiva</title>
+<meta name="description" content="Handcrafted cookies from Crumbiva in Doncaster East, Melbourne. Almond, Gudd Saunf, Pistachio, Choco-Chip and Coconut, baked in small batches with real butter.">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="nav">
-  <nav class="nav-in" aria-label="Main">
+  <div class="nav-in">
     <a class="brand" href="index.html"><img src="images/logo.png" alt="Crumbiva"></a>
-    <div class="nav-links">
-      <a href="cookies.html">Cookies</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="cookies.html" aria-current="page">Cookies</a>
       <a href="food.html">Food</a>
       <a href="recipes.html">Recipes</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </nav>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <details class="nav-mobile">
+      <summary>Menu</summary>
+      <nav aria-label="Main">
+        <a href="cookies.html">Cookies</a>
+        <a href="food.html">Food</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </details>
+  </div>
 </header>
 
-<main>
+<main id="main">
 
-  <div class="page-head wrap tint-cookies">
+  <div class="page-head wrap">
     <a class="back" href="index.html">Back to home</a>
-    <p class="eyebrow">Cookies and more</p>
-    <h1>Baked in small batches</h1>
-    <p>Real butter, premium nuts and natural sweeteners. Every batch is baked to order and packed for gifting.</p>
+    <p class="eyebrow">Cookies</p>
+    <h1>Handcrafted Cookies</h1>
+    <p>Baked in small batches with real butter, premium nuts and natural sweeteners.</p>
   </div>
 
   <section>
     <div class="wrap">
-      <div class="grid g3">
-        <article class="card">
-          <div class="swatch s-almond" aria-hidden="true"></div>
-          <h3>Almond Cookies</h3>
-          <p>Buttery, crunchy and delicious.</p>
+      <div class="products">
+        <article class="product">
+          <div class="tile t-almond" aria-hidden="true"><span>A</span></div>
+          <div class="body">
+            <h3>Almond Cookies</h3>
+            <p>Buttery, crunchy and delicious.</p>
+          </div>
         </article>
-        <article class="card">
-          <div class="swatch s-gud" aria-hidden="true"></div>
-          <h3>Gud Saunf Cookies</h3>
-          <p>A perfect blend of jaggery and fennel seeds.</p>
+
+        <article class="product">
+          <div class="tile t-gudd" aria-hidden="true"><span>G</span></div>
+          <div class="body">
+            <h3>Gudd Saunf Cookies</h3>
+            <p>A perfect blend of jaggery and fennel seeds.</p>
+          </div>
         </article>
-        <article class="card">
-          <div class="swatch s-pista" aria-hidden="true"></div>
-          <h3>Pistachio Cookies</h3>
-          <p>Loaded with crunchy pistachios for a delightful bite.</p>
+
+        <article class="product">
+          <div class="tile t-pista" aria-hidden="true"><span>P</span></div>
+          <div class="body">
+            <h3>Pistachio Cookies</h3>
+            <p>Loaded with crunchy pistachios for a delightful bite.</p>
+          </div>
         </article>
-        <article class="card">
-          <div class="swatch s-more" aria-hidden="true"></div>
-          <h3>Soft and chewy</h3>
-          <p>Soft, chewy and full of flavour. The everyday favourite.</p>
+
+        <article class="product">
+          <div class="tile t-choco" aria-hidden="true"><span>C</span></div>
+          <div class="body">
+            <h3>Choco-Chip Cookies</h3>
+            <p>Buttery, crunchy and delicious.</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="tile t-coconut" aria-hidden="true"><span>C</span></div>
+          <div class="body">
+            <h3>Coconut Cookies</h3>
+            <p>Soft, chewy and full of flavour.</p>
+          </div>
         </article>
       </div>
+    </div>
+  </section>
 
-      <p class="note">
-        <strong>Flours and sweeteners.</strong> Ragi, oats, almond, wheat, gram flour, sweetener and jaggery.
-        We can customise cookies to suit your dietary preferences. Please contact us for more details.
-      </p>
+  <section class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Beyond the range</p>
+        <h2>Gifting &amp; Custom Cookies</h2>
+      </div>
 
-      <div class="callout" style="max-width:760px;margin-left:auto;margin-right:auto">
-        <h3>Gifting and bulk boxes</h3>
-        <p>Cookie boxes are finished with care and ready to hand over. We can put a box together around your budget, the occasion, or the number of people on your list. Please get in touch in advance so we can plan the bake.</p>
-        <div class="sizes">
-          <span>No added preservatives</span><span>Real butter</span><span>Premium nuts</span><span>Perfect for gifting</span>
+      <div class="callout" style="margin-top:0">
+        <h3>Gifting</h3>
+        <p>Cookie boxes for birthdays, celebrations, thank you gifts and special occasions. Tell us the occasion and how many people you are buying for, and we will put a box together to suit.</p>
+        <div class="btns" style="justify-content:flex-start;margin-top:24px">
+          <a class="btn ghost" href="contact.html">Ask About Gift Boxes</a>
         </div>
-        <p><a href="tel:+61490875811">Call 0490 875 811</a> to order.</p>
+      </div>
+
+      <div class="callout">
+        <h3>Custom Cookies</h3>
+        <p>Custom cookie options and flavour combinations are available by enquiry. We can customise cookies around selected flours and sweeteners.</p>
+        <div class="options">
+          <span>Ragi</span><span>Oats</span><span>Almond</span><span>Wheat</span>
+          <span>Gram Flour</span><span>Sweetener</span><span>Jaggery</span>
+        </div>
+        <p>Please contact us to discuss what you have in mind before ordering.</p>
+        <div class="btns" style="justify-content:flex-start;margin-top:24px">
+          <a class="btn ghost" href="contact.html">Ask About Custom Cookies</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-block">
+        <p class="eyebrow">Order</p>
+        <h2>Place a Cookie Order</h2>
+        <div class="lines">
+          <span>Doncaster East, VIC</span>
+          <span class="badge">Pickup Only</span>
+          <a href="tel:0490875811">0490 875 811</a>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="tel:0490875811">Call to Order</a>
+          <a class="btn ghost" href="contact.html">Contact Crumbiva</a>
+        </div>
       </div>
     </div>
   </section>
@@ -81,25 +145,33 @@
   <div class="wrap">
     <div class="f-grid">
       <div>
-        <h3>Pickup</h3>
-        <p>Doncaster East, VIC<br><span class="pickup">Pickup only</span></p>
+        <p class="f-brand">Crumbiva</p>
+        <p class="f-tag">Handcrafted Cookies &amp; North Indian Food</p>
       </div>
       <div>
-        <h3>Phone</h3>
-        <p><a href="tel:+61490875811">0490 875 811</a></p>
+        <p class="f-head">Explore</p>
+        <div class="f-links">
+          <a href="cookies.html">Cookies</a>
+          <a href="food.html">Food</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
       <div>
-        <h3>Website</h3>
-        <p><a href="https://crumbiva.com">crumbiva.com</a></p>
+        <p class="f-head">Pickup</p>
+        <p>Doncaster East, VIC<br>Pickup Only</p>
       </div>
       <div>
-        <h3>Orders</h3>
-        <p>Cookies baked to order.<br>Bulk orders for parties and functions.<br>Please contact us in advance.</p>
+        <p class="f-head">Enquiries</p>
+        <p><a href="tel:0490875811">0490 875 811</a></p>
       </div>
     </div>
     <div class="f-bottom">
       <span>&copy; 2026 Crumbiva. Doncaster East, Victoria.</span>
-      <span>Freshly baked. Premium ingredients. Made with love.</span>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
     </div>
   </div>
 </footer>

@@ -3,35 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Recipes — Crumbiva</title>
-<meta name="description" content="Cookie recipes from the Crumbiva kitchen: chocolate chip, jaggery and fennel, pistachio shortbread and ragi oat cookies, with ingredients and method.">
+<title>Cookie Recipes &amp; Baking Tips | Crumbiva</title>
+<meta name="description" content="General cookie recipes and baking tips from Crumbiva: chocolate chip, jaggery and fennel, pistachio shortbread, and ragi oat cookies, with ingredients and method.">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="nav">
-  <nav class="nav-in" aria-label="Main">
+  <div class="nav-in">
     <a class="brand" href="index.html"><img src="images/logo.png" alt="Crumbiva"></a>
-    <div class="nav-links">
+    <nav class="nav-links" aria-label="Main">
       <a href="cookies.html">Cookies</a>
       <a href="food.html">Food</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </nav>
+      <a href="recipes.html" aria-current="page">Recipes</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <details class="nav-mobile">
+      <summary>Menu</summary>
+      <nav aria-label="Main">
+        <a href="cookies.html">Cookies</a>
+        <a href="food.html">Food</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </details>
+  </div>
 </header>
 
-<main>
+<main id="main">
 
-  <div class="page-head wrap tint-recipes">
+  <div class="page-head wrap">
     <a class="back" href="index.html">Back to home</a>
     <p class="eyebrow">Recipes</p>
-    <h1>Bake them at home</h1>
-    <p>The cookies we make most often, written out so you can make them in your own kitchen.</p>
+    <h1>Cookie Recipes &amp; Baking Tips</h1>
+    <p>General baking recipes and guidance for home baking. These are not the recipes used in the Crumbiva kitchen.</p>
   </div>
 
   <section>
@@ -67,7 +78,7 @@
         </details>
 
         <details class="recipe">
-          <summary>Jaggery and Fennel Cookies <span class="tag">Gud Saunf</span></summary>
+          <summary>Jaggery and Fennel Cookies <span class="tag">Gudd Saunf style</span></summary>
           <div class="recipe-body">
             <h4>Ingredients</h4>
             <ul>
@@ -150,8 +161,8 @@
       </div>
 
       <p class="note">
-        Baking any of these? We would love to see them. Tag us or send a photo, and if you would rather
-        skip the oven entirely, <a href="cookies.html">order a box from us instead</a>.
+        <strong>Please note.</strong> These are general baking recipes provided as guidance, not the recipes used in the
+        Crumbiva kitchen. To order cookies made by Crumbiva, see the <a href="cookies.html">cookie range</a>.
       </p>
     </div>
   </section>
@@ -162,25 +173,33 @@
   <div class="wrap">
     <div class="f-grid">
       <div>
-        <h3>Pickup</h3>
-        <p>Doncaster East, VIC<br><span class="pickup">Pickup only</span></p>
+        <p class="f-brand">Crumbiva</p>
+        <p class="f-tag">Handcrafted Cookies &amp; North Indian Food</p>
       </div>
       <div>
-        <h3>Phone</h3>
-        <p><a href="tel:+61490875811">0490 875 811</a></p>
+        <p class="f-head">Explore</p>
+        <div class="f-links">
+          <a href="cookies.html">Cookies</a>
+          <a href="food.html">Food</a>
+          <a href="recipes.html">Recipes</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
       <div>
-        <h3>Website</h3>
-        <p><a href="https://crumbiva.com">crumbiva.com</a></p>
+        <p class="f-head">Pickup</p>
+        <p>Doncaster East, VIC<br>Pickup Only</p>
       </div>
       <div>
-        <h3>Orders</h3>
-        <p>Cookies baked to order.<br>Bulk orders for parties and functions.<br>Please contact us in advance.</p>
+        <p class="f-head">Enquiries</p>
+        <p><a href="tel:0490875811">0490 875 811</a></p>
       </div>
     </div>
     <div class="f-bottom">
       <span>&copy; 2026 Crumbiva. Doncaster East, Victoria.</span>
-      <span>Freshly baked. Premium ingredients. Made with love.</span>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
     </div>
   </div>
 </footer>

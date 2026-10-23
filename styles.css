@@ -73,9 +73,6 @@ a{color:inherit}
 img{max-width:100%; display:block}
 .wrap{max-width:var(--measure); margin:0 auto; padding:0 24px}
 :focus-visible{outline:2px solid var(--pink); outline-offset:3px; border-radius:6px}
-.skip{position:absolute; left:-9999px}
-.skip:focus{left:16px; top:12px; z-index:100; background:var(--paper); padding:10px 16px;
-            border-radius:var(--radius-sm); box-shadow:var(--shadow); font-size:var(--fs-sm)}
 
 /* ---------- one eyebrow style, used site wide ---------- */
 .eyebrow{
@@ -103,23 +100,6 @@ img{max-width:100%; display:block}
            font-size:var(--fs-sm); color:var(--body)}
 .nav-links a{text-decoration:none; padding:4px 0; border-bottom:1px solid transparent}
 .nav-links a:hover,.nav-links a[aria-current="page"]{color:var(--ink); border-bottom-color:var(--pink)}
-.nav-mobile{display:none; margin-left:auto; position:relative}
-.nav-mobile summary{
-  list-style:none; cursor:pointer; font-size:var(--fs-sm); font-weight:500;
-  border:1px solid var(--line); border-radius:999px; padding:8px 18px; background:var(--paper)
-}
-.nav-mobile summary::-webkit-details-marker{display:none}
-.nav-mobile[open] summary{border-color:var(--pink); color:var(--pink)}
-.nav-mobile nav{
-  position:absolute; right:0; top:calc(100% + 10px); min-width:190px;
-  background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
-  box-shadow:var(--shadow); padding:8px; display:grid
-}
-.nav-mobile nav a{
-  text-decoration:none; padding:11px 14px; border-radius:var(--radius-sm);
-  font-size:var(--fs-sm); color:var(--body)
-}
-.nav-mobile nav a:hover{background:var(--cream); color:var(--ink)}
 
 /* ---------- hero ---------- */
 .hero{text-align:center; padding:96px 0 84px}
@@ -407,9 +387,9 @@ footer{background:var(--cream); border-top:1px solid var(--line); padding:58px 0
   .contact-grid{grid-template-columns:1fr; gap:28px}
 }
 @media (max-width:680px){
-  .nav-links{display:none}
-  .nav-mobile{display:block}
-  .brand img{height:32px}
+  .nav-in{gap:14px; padding:0 18px}
+  .nav-links{gap:15px; font-size:12.5px}
+  .brand img{height:30px}
   .hero{padding:60px 0 52px}
   .hero img.logo{height:78px}
   section{padding:58px 0}

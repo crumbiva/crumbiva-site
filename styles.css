@@ -188,7 +188,7 @@ section{padding:80px 0; scroll-margin-top:76px}
   color:var(--pink); text-decoration:none
 }
 .service .link:hover{text-decoration:underline}
-.g-cookies{background:var(--blush)} .g-food{background:var(--sage)}
+.g-cookies{background:var(--blush)}
 .g-bulk{background:var(--peach)} .g-gift{background:var(--rose)}
 .g-recipes{background:var(--lilac)} .g-custom{background:var(--cream); border:1px solid var(--line)}
 

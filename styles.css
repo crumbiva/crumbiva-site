@@ -206,13 +206,12 @@ section{padding:80px 0; scroll-margin-top:76px}
   background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
   box-shadow:var(--shadow-sm); overflow:hidden; display:flex; flex-direction:column
 }
-.product .swatch{width:44px; height:44px; border-radius:12px; margin-bottom:18px}
-.product .body{padding:26px 26px 28px; display:flex; flex-direction:column; flex:1}
+.product .swatch{width:44px; height:44px; border-radius:12px; margin:0 auto 18px}
+.product .body{padding:26px 26px 28px; display:flex; flex-direction:column; flex:1; text-align:center; align-items:center}
 .product h3{font-size:var(--fs-h3)}
 .product p{margin-top:10px; color:var(--muted); font-size:var(--fs-sm); flex:1}
 .product .price{margin-top:16px; font-size:var(--fs-sm); color:var(--muted)}
 .t-almond{background:linear-gradient(150deg, var(--peach), var(--cream))}
-.t-gudd{background:linear-gradient(150deg, var(--rose), var(--cream))}
 .t-pista{background:linear-gradient(150deg, var(--sage), var(--cream))}
 .t-choco{background:linear-gradient(150deg, #EFE6E0, var(--cream))}
 .t-coconut{background:linear-gradient(150deg, var(--blush), var(--cream))}

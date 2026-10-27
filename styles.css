@@ -215,6 +215,14 @@ section{padding:80px 0; scroll-margin-top:76px}
 .t-pista{background:linear-gradient(150deg, var(--sage), var(--cream))}
 .t-choco{background:linear-gradient(150deg, #EFE6E0, var(--cream))}
 .t-coconut{background:linear-gradient(150deg, var(--blush), var(--cream))}
+.t-redvelvet{background:linear-gradient(150deg, #F3D9DE, var(--cream))}
+.t-walnut{background:linear-gradient(150deg, #E8DFD3, var(--cream))}
+.t-darkchoc{background:linear-gradient(150deg, #DED2CC, var(--cream))}
+.t-oatmeal{background:linear-gradient(150deg, #F0E7D6, var(--cream))}
+.t-pbchip{background:linear-gradient(150deg, #EBDCC9, var(--cream))}
+.t-twochip{background:linear-gradient(150deg, #E4D8D2, var(--cream))}
+.t-caramel{background:linear-gradient(150deg, #F2E3CE, var(--cream))}
+.t-macadamia{background:linear-gradient(150deg, #F1EDE0, var(--cream))}
 
 /* ---------- menu ---------- */
 .menu-group{margin-top:34px}

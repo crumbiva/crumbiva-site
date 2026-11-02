@@ -363,3 +363,48 @@ footer{background:var(--cream); border-top:1px solid var(--line); padding:58px 0
   .callout{padding:26px 22px}
   .f-bottom{flex-direction:column}
 }
+
+/* ---------- link in bio page (crumbiva.com/links) ---------- */
+.linkpage{
+  min-height:100vh; display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  padding:56px 22px 40px; text-align:center
+}
+.linkpage .mark{height:78px; width:auto; margin:0 auto 26px}
+.linkpage h1{font-size:clamp(1.5rem,5vw,1.9rem)}
+.linkpage .sub{
+  margin-top:10px; color:var(--muted); font-size:var(--fs-sm); letter-spacing:.02em
+}
+.links{width:100%; max-width:470px; margin:38px 0 0; display:grid; gap:13px}
+.link-btn{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  min-height:58px; padding:15px 20px; text-decoration:none;
+  background:var(--paper); border:1px solid var(--line); border-radius:999px;
+  color:var(--ink); font-family:var(--sans); font-size:16px; font-weight:500;
+  box-shadow:var(--shadow-sm);
+  transition:border-color .16s ease, transform .16s ease, box-shadow .16s ease
+}
+.link-btn:hover,.link-btn:focus-visible{
+  border-color:rgba(26,26,28,.22); box-shadow:var(--shadow); transform:translateY(-1px)
+}
+.link-btn.primary{
+  background:var(--pink); border-color:var(--pink); color:#fff; font-weight:600
+}
+.link-btn.primary:hover,.link-btn.primary:focus-visible{background:var(--pink-ink); border-color:var(--pink-ink)}
+.link-btn .note-inline{font-weight:400; opacity:.72; font-size:14px}
+.link-foot{
+  margin-top:36px; font-size:var(--fs-sm); color:var(--muted);
+  display:grid; gap:8px; justify-items:center
+}
+.link-foot a{color:var(--pink); text-decoration:none}
+.link-foot a:hover{text-decoration:underline}
+.link-foot .pickup{
+  background:var(--blush); color:var(--pink); border-radius:999px;
+  padding:5px 14px; font-size:var(--fs-xs); font-weight:600
+}
+@media (max-width:420px){
+  .linkpage{padding:40px 18px 32px}
+  .linkpage .mark{height:62px}
+  .links{margin-top:30px}
+  .link-btn{min-height:54px; font-size:15px}
+}

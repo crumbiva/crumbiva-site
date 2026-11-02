@@ -392,6 +392,8 @@ footer{background:var(--cream); border-top:1px solid var(--line); padding:58px 0
 }
 .link-btn.primary:hover,.link-btn.primary:focus-visible{background:var(--pink-ink); border-color:var(--pink-ink)}
 .link-btn .note-inline{font-weight:400; opacity:.72; font-size:14px}
+.link-btn svg{width:20px; height:20px; flex:0 0 20px; fill:currentColor}
+.link-btn.primary svg{opacity:.95}
 .link-foot{
   margin-top:36px; font-size:var(--fs-sm); color:var(--muted);
   display:grid; gap:8px; justify-items:center
